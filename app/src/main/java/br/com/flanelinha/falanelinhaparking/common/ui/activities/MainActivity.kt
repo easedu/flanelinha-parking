@@ -4,6 +4,12 @@ import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentTransaction
 import android.support.v7.app.AppCompatActivity
+import br.com.flanelinha.falanelinhaparking.R
+import br.com.flanelinha.falanelinhaparking.about.AboutFragment
+import br.com.flanelinha.falanelinhaparking.cars.ui.fragments.CarListFragment
+import br.com.flanelinha.falanelinhaparking.cars.ui.fragments.RegisterCarFragment
+import br.com.flanelinha.falanelinhaparking.contact.ui.ContactFragment
+import br.com.flanelinha.falanelinhaparking.map.MapsFragment
 
 class MainActivity : AppCompatActivity() {
 

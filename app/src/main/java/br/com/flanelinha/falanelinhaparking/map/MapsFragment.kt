@@ -14,6 +14,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import br.com.flanelinha.falanelinhaparking.R
 import java.io.IOException
 
 class MapsFragment : Fragment(), OnMapReadyCallback,

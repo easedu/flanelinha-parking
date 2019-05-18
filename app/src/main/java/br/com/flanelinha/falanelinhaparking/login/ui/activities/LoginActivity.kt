@@ -5,6 +5,12 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.text.SpannableString
 import android.view.View
+import br.com.flanelinha.falanelinhaparking.R
+import br.com.flanelinha.falanelinhaparking.common.ui.activities.MainActivity
+import br.com.flanelinha.falanelinhaparking.login.data.model.UserAuthModel
+import br.com.flanelinha.falanelinhaparking.login.ui.viewmodel.LoginViewModel
+import br.com.flanelinha.falanelinhaparking.registration.ui.activities.SignUpActivity
+import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity() {
 

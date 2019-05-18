@@ -2,6 +2,10 @@ package br.com.flanelinha.falanelinhaparking.login.ui.viewmodel
 
 import android.arch.lifecycle.ViewModel
 import android.content.Context
+import br.com.flanelinha.falanelinhaparking.common.repository.FirebaseRepository
+import br.com.flanelinha.falanelinhaparking.common.util.ErrorMessage
+import br.com.flanelinha.falanelinhaparking.login.data.model.UserAuthModel
+import br.com.flanelinha.falanelinhaparking.login.data.model.UserModel
 
 class LoginViewModel(val context: Context) : ViewModel() {
 

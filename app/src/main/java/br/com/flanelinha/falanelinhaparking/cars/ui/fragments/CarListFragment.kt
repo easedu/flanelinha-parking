@@ -7,6 +7,10 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import br.com.flanelinha.falanelinhaparking.R
+import br.com.flanelinha.falanelinhaparking.cars.ui.CarsListAdapter
+import br.com.flanelinha.falanelinhaparking.cars.ui.viewmodel.CarViewModel
+import kotlinx.android.synthetic.main.fragment_car_list.*
 
 class CarListFragment : Fragment() {
 

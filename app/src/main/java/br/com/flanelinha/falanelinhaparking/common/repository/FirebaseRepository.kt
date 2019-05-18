@@ -1,5 +1,8 @@
 package br.com.flanelinha.falanelinhaparking.common.repository
 
+import br.com.flanelinha.falanelinhaparking.login.data.model.UserAuthModel
+import br.com.flanelinha.falanelinhaparking.login.data.model.UserModel
+
 class FirebaseRepository {
 
     private val firebaseAuth: FirebaseAuth = FirebaseAuth.getInstance()

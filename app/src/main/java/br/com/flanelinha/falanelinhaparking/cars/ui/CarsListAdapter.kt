@@ -4,6 +4,7 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import br.com.flanelinha.falanelinhaparking.R
 
 class CarsListAdapter(
     private val context: Context,

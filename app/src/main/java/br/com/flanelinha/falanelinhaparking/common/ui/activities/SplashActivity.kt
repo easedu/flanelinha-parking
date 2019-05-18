@@ -7,6 +7,8 @@ import android.os.Bundle
 import android.os.Handler
 import android.support.v7.app.AppCompatActivity
 import android.view.animation.AnimationUtils
+import br.com.flanelinha.falanelinhaparking.R
+import br.com.flanelinha.falanelinhaparking.common.constants.USER_PREFERENCES_KEY
 
 class SplashActivity : AppCompatActivity() {
 

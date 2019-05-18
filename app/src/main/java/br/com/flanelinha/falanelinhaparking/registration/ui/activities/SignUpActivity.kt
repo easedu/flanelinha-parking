@@ -6,6 +6,7 @@ import br.com.flanelinha.falanelinhaparking.R
 import br.com.flanelinha.falanelinhaparking.login.data.model.UserAuthModel
 import br.com.flanelinha.falanelinhaparking.login.data.model.UserModel
 import br.com.flanelinha.falanelinhaparking.login.ui.viewmodel.LoginViewModel
+import kotlinx.android.synthetic.main.activity_sign_up.*
 
 class SignUpActivity : AppCompatActivity() {
 
