@@ -4,9 +4,6 @@
     <string name="label_button_register">Register</string>
     <string name="label_MakeCall">Call</string>
     <string name="label_logout">Logout</string>
-    <string name="label_balance_amount_title">Balance</string>
-    <string name="label_account">Account</string>
-    <string name="label_payment">Payment</string>
     <string name="label_logo">Logo</string>
 
     <!-- HINTS -->
