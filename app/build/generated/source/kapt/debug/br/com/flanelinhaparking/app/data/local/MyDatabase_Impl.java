@@ -12,8 +12,8 @@ import android.arch.persistence.room.util.TableInfo;
 import android.arch.persistence.room.util.TableInfo.Column;
 import android.arch.persistence.room.util.TableInfo.ForeignKey;
 import android.arch.persistence.room.util.TableInfo.Index;
-import br.com.flanelinhaparking.app.data.local.dao.CarDAO;
-import br.com.flanelinhaparking.app.data.local.dao.CarDAO_Impl;
+import br.com.flanelinhaparking.app.data.local.dao.ParkingDAO;
+import br.com.flanelinhaparking.app.data.local.dao.ParkingDAO_Impl;
 import java.lang.IllegalStateException;
 import java.lang.Override;
 import java.lang.String;
@@ -23,21 +23,21 @@ import java.util.HashSet;
 
 @SuppressWarnings("unchecked")
 public class MyDatabase_Impl extends MyDatabase {
-  private volatile CarDAO _carDAO;
+  private volatile ParkingDAO _parkingDAO;
 
   @Override
   protected SupportSQLiteOpenHelper createOpenHelper(DatabaseConfiguration configuration) {
     final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(1) {
       @Override
       public void createAllTables(SupportSQLiteDatabase _db) {
-        _db.execSQL("CREATE TABLE IF NOT EXISTS `Car` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `plate` TEXT NOT NULL, `model` TEXT NOT NULL)");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `Parking` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `name` TEXT NOT NULL, `address` TEXT NOT NULL)");
         _db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
-        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"23116ff07e9bc9c55fb3cc1e8b9b08cc\")");
+        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"3f0a5c2915bd4e911b98b72546b7e10d\")");
       }
 
       @Override
       public void dropAllTables(SupportSQLiteDatabase _db) {
-        _db.execSQL("DROP TABLE IF EXISTS `Car`");
+        _db.execSQL("DROP TABLE IF EXISTS `Parking`");
       }
 
       @Override
@@ -62,21 +62,21 @@ public class MyDatabase_Impl extends MyDatabase {
 
       @Override
       protected void validateMigration(SupportSQLiteDatabase _db) {
-        final HashMap<String, TableInfo.Column> _columnsCar = new HashMap<String, TableInfo.Column>(3);
-        _columnsCar.put("id", new TableInfo.Column("id", "INTEGER", true, 1));
-        _columnsCar.put("plate", new TableInfo.Column("plate", "TEXT", true, 0));
-        _columnsCar.put("model", new TableInfo.Column("model", "TEXT", true, 0));
-        final HashSet<TableInfo.ForeignKey> _foreignKeysCar = new HashSet<TableInfo.ForeignKey>(0);
-        final HashSet<TableInfo.Index> _indicesCar = new HashSet<TableInfo.Index>(0);
-        final TableInfo _infoCar = new TableInfo("Car", _columnsCar, _foreignKeysCar, _indicesCar);
-        final TableInfo _existingCar = TableInfo.read(_db, "Car");
-        if (! _infoCar.equals(_existingCar)) {
-          throw new IllegalStateException("Migration didn't properly handle Car(br.com.flanelinhaparking.app.cars.model.Car).\n"
-                  + " Expected:\n" + _infoCar + "\n"
-                  + " Found:\n" + _existingCar);
+        final HashMap<String, TableInfo.Column> _columnsParking = new HashMap<String, TableInfo.Column>(3);
+        _columnsParking.put("id", new TableInfo.Column("id", "INTEGER", true, 1));
+        _columnsParking.put("name", new TableInfo.Column("name", "TEXT", true, 0));
+        _columnsParking.put("address", new TableInfo.Column("address", "TEXT", true, 0));
+        final HashSet<TableInfo.ForeignKey> _foreignKeysParking = new HashSet<TableInfo.ForeignKey>(0);
+        final HashSet<TableInfo.Index> _indicesParking = new HashSet<TableInfo.Index>(0);
+        final TableInfo _infoParking = new TableInfo("Parking", _columnsParking, _foreignKeysParking, _indicesParking);
+        final TableInfo _existingParking = TableInfo.read(_db, "Parking");
+        if (! _infoParking.equals(_existingParking)) {
+          throw new IllegalStateException("Migration didn't properly handle Parking(br.com.flanelinhaparking.app.parkings.model.Parking).\n"
+                  + " Expected:\n" + _infoParking + "\n"
+                  + " Found:\n" + _existingParking);
         }
       }
-    }, "23116ff07e9bc9c55fb3cc1e8b9b08cc", "bd5c9ba53a0dbaf93e5842de51bba6d6");
+    }, "3f0a5c2915bd4e911b98b72546b7e10d", "197280ccefc3e1cc0040802014520f0d");
     final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(configuration.context)
         .name(configuration.name)
         .callback(_openCallback)
@@ -87,7 +87,7 @@ public class MyDatabase_Impl extends MyDatabase {
 
   @Override
   protected InvalidationTracker createInvalidationTracker() {
-    return new InvalidationTracker(this, "Car");
+    return new InvalidationTracker(this, "Parking");
   }
 
   @Override
@@ -96,7 +96,7 @@ public class MyDatabase_Impl extends MyDatabase {
     final SupportSQLiteDatabase _db = super.getOpenHelper().getWritableDatabase();
     try {
       super.beginTransaction();
-      _db.execSQL("DELETE FROM `Car`");
+      _db.execSQL("DELETE FROM `Parking`");
       super.setTransactionSuccessful();
     } finally {
       super.endTransaction();
@@ -108,15 +108,15 @@ public class MyDatabase_Impl extends MyDatabase {
   }
 
   @Override
-  public CarDAO carDao() {
-    if (_carDAO != null) {
-      return _carDAO;
+  public ParkingDAO parkingDao() {
+    if (_parkingDAO != null) {
+      return _parkingDAO;
     } else {
       synchronized(this) {
-        if(_carDAO == null) {
-          _carDAO = new CarDAO_Impl(this);
+        if(_parkingDAO == null) {
+          _parkingDAO = new ParkingDAO_Impl(this);
         }
-        return _carDAO;
+        return _parkingDAO;
       }
     }
   }

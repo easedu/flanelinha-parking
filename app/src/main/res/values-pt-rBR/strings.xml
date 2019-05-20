@@ -38,7 +38,16 @@
     <string name="dev_name1">Eduardo Arruda Souza</string>
     <string name="dev_name2">Raúl Vizintim Brito</string>
     <string name="developed_for_label">Desenvolvido por:</string>
+    <string name="label_attention">Atenção</string>
 
-    <string name="hello_blank_fragment">Olá espaço em branco</string>
+    <string name="delete_dialog_title">Tem Certeza que deseja deletar este estacionamento?</string>
+
+    <string name="message_success_register">Estacionamento cadastrado com sucesso!</string>
+    <string name="message_success_update">Estacionamento atualizado com sucesso!</string>
+    <string name="message_success_delete">Estacionamento deletado com sucesso!</string>
+    <string name="update_label">Atualizar</string>
+    <string name="register_label">Cadastrar</string>
+    <string name="deleter_label">Deletar</string>
+    <string name="cancel_label">Cancelar</string>
 
 </resources>

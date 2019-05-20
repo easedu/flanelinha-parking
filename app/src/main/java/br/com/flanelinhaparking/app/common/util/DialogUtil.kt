@@ -7,7 +7,7 @@ import android.content.DialogInterface
 import android.view.LayoutInflater
 import android.widget.TextView
 import br.com.flanelinhaparking.app.R
-import br.com.flanelinhaparking.app.cars.model.Car
+import br.com.flanelinhaparking.app.parkings.model.Parking
 
 class DialogUtil {
 
@@ -26,7 +26,7 @@ class DialogUtil {
 
         fun showMessageDialog(context: Context, message: String) {
             val alertDialog = AlertDialog.Builder(context).create()
-            alertDialog.setTitle("Atenção")
+            alertDialog.setTitle(context.resources.getString(R.string.label_attention))
             alertDialog.setMessage(message)
             alertDialog.setCancelable(true)
 
@@ -38,19 +38,19 @@ class DialogUtil {
             alertDialog.show()
         }
 
-        fun showDeleteDialog(context: Context, car: Car?, deleteAction: ()  -> Unit){
+        fun showDeleteDialog(context: Context, parking: Parking?, deleteAction: ()  -> Unit){
             val alertDialog = AlertDialog.Builder(context).create()
-            alertDialog.setTitle("Tem Certeza que deseja deletar este veículo?")
-            alertDialog.setMessage("Modelo: ${car?.model} Placa:${car?.plate}")
+            alertDialog.setTitle(context.resources.getString(R.string.delete_dialog_title))
+            alertDialog.setMessage("${parking?.address} ${parking?.name}")
             alertDialog.setCancelable(true)
 
-            alertDialog.setButton(DialogInterface.BUTTON_POSITIVE, "Cancelar", object : DialogInterface.OnClickListener {
+            alertDialog.setButton(DialogInterface.BUTTON_POSITIVE, context.resources.getString(R.string.cancel_label), object : DialogInterface.OnClickListener {
                 override fun onClick(dialog: DialogInterface, which: Int) {
                     alertDialog.dismiss()
                 }
             })
 
-            alertDialog.setButton(DialogInterface.BUTTON_NEGATIVE, "Deletar", object : DialogInterface.OnClickListener {
+            alertDialog.setButton(DialogInterface.BUTTON_NEGATIVE, context.resources.getString(R.string.deleter_label), object : DialogInterface.OnClickListener {
                 override fun onClick(dialog: DialogInterface, which: Int) {
                     deleteAction()
                     alertDialog.dismiss()
@@ -59,16 +59,16 @@ class DialogUtil {
             alertDialog.show()
         }
 
-        fun showInsertUpdateDialog(context: Context, car: Car?, buttonLabel: String, action: (car: Car)  -> Unit){
+        fun showInsertUpdateDialog(context: Context, parking: Parking?, buttonLabel: String, action: (parking: Parking)  -> Unit){
             val alertDialog = AlertDialog.Builder(context).create()
-            var viewInflated = LayoutInflater.from(context).inflate(R.layout.insert_update_car, null, false)
+            var viewInflated = LayoutInflater.from(context).inflate(R.layout.insert_update_parking, null, false)
 
             var text_view_plate = viewInflated.findViewById<TextView>(R.id.tietPlate)
             var text_view_model = viewInflated.findViewById<TextView>(R.id.tietModel)
 
-            car.let {
-                text_view_model.text = it?.model
-                text_view_plate.text = it?.plate
+            parking.let {
+                text_view_model.text = it?.address
+                text_view_plate.text = it?.name
             }
 
             alertDialog.setCancelable(true)
@@ -81,12 +81,12 @@ class DialogUtil {
 
             alertDialog.setButton(DialogInterface.BUTTON_NEGATIVE, buttonLabel, object : DialogInterface.OnClickListener {
                 override fun onClick(dialog: DialogInterface, which: Int) {
-                    if(car == null){
-                        action(Car(0, text_view_plate.text.toString(), text_view_plate.text.toString()))
+                    if(parking == null){
+                        action(Parking(0, text_view_plate.text.toString(), text_view_plate.text.toString()))
                     } else {
-                        car.plate = text_view_plate.text.toString()
-                        car.model = text_view_model.text.toString()
-                        action(car)
+                        parking.name = text_view_plate.text.toString()
+                        parking.address = text_view_model.text.toString()
+                        action(parking)
                     }
                     text_view_model.text = ""
                     text_view_plate.text = ""

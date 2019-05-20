@@ -1,7 +1,7 @@
 package br.com.flanelinhaparking.app.data.local.util
 
 import android.content.Context
-import br.com.flanelinhaparking.app.cars.model.Car
+import br.com.flanelinhaparking.app.parkings.model.Parking
 import br.com.flanelinhaparking.app.data.local.MyDatabase
 import io.reactivex.Observable
 
@@ -9,32 +9,32 @@ class DbUtil(context: Context) {
 
     private val database: MyDatabase = MyDatabase
             .getInstance(context.applicationContext)!!
-    private val carDao = database.carDao()
+    private val parkingDao = database.parkingDao()
 
-    fun insertCar(car: Car): Observable<Boolean> {
+    fun insertParking(parking: Parking): Observable<Boolean> {
         return Observable.fromCallable({
-            carDao.insert(car)
+            parkingDao.insert(parking)
             true
         })
     }
 
-    fun deleteCar(car: Car): Observable<Boolean> {
+    fun deleteParking(parking: Parking): Observable<Boolean> {
         return Observable.fromCallable({
-            carDao.delete(car)
+            parkingDao.delete(parking)
             true
         })
     }
 
-    fun updateCar(car: Car): Observable<Boolean> {
+    fun updateParking(parking: Parking): Observable<Boolean> {
         return Observable.fromCallable({
-            carDao.update(car)
+            parkingDao.update(parking)
             true
         })
     }
 
-    fun loadCars(): Observable<List<Car>> {
+    fun loadParkings(): Observable<List<Parking>> {
         return Observable.fromCallable({
-            carDao.loadCars()
+            parkingDao.loadParkings()
         })
     }
 

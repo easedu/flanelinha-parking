@@ -5,8 +5,9 @@
     build-mode="COLD"
     density="xxhdpi"
     format="10"
+    ir-eligibility="R_CLASS_CHANGE"
     plugin-version="3.1.3"
-    timestamp="1558316721009"
+    timestamp="1558320044873"
     token="6794297926599467247"
     verifier="COLD_SWAP_REQUESTED" >
 
@@ -18,18 +19,48 @@
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="37" />
     <task
         name="verifier"
-        duration="0" />
+        duration="29" />
 
     <artifact
         location="/Users/raphael.melo.silva/FIAP/flanelinha-parking/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
         type="SPLIT" />
+    <artifact
+        location="/Users/raphael.melo.silva/FIAP/flanelinha-parking/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/raphael.melo.silva/FIAP/flanelinha-parking/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/raphael.melo.silva/FIAP/flanelinha-parking/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/raphael.melo.silva/FIAP/flanelinha-parking/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/raphael.melo.silva/FIAP/flanelinha-parking/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/raphael.melo.silva/FIAP/flanelinha-parking/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/raphael.melo.silva/FIAP/flanelinha-parking/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/raphael.melo.silva/FIAP/flanelinha-parking/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/raphael.melo.silva/FIAP/flanelinha-parking/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/raphael.melo.silva/FIAP/flanelinha-parking/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
+        type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1558316638081"
+        timestamp="1558319305610"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/raphael.melo.silva/FIAP/flanelinha-parking/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
@@ -53,13 +84,13 @@
             location="/Users/raphael.melo.silva/FIAP/flanelinha-parking/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/raphael.melo.silva/FIAP/flanelinha-parking/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
+            location="/Users/raphael.melo.silva/FIAP/flanelinha-parking/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
             type="SPLIT" />
         <artifact
             location="/Users/raphael.melo.silva/FIAP/flanelinha-parking/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/raphael.melo.silva/FIAP/flanelinha-parking/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            location="/Users/raphael.melo.silva/FIAP/flanelinha-parking/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
             type="SPLIT" />
         <artifact
             location="/Users/raphael.melo.silva/FIAP/flanelinha-parking/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
@@ -73,11 +104,42 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1558316721009"
+        ir-eligibility="R_CLASS_CHANGE"
+        timestamp="1558320044873"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/raphael.melo.silva/FIAP/flanelinha-parking/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
             type="SPLIT" />
+        <artifact
+            location="/Users/raphael.melo.silva/FIAP/flanelinha-parking/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/raphael.melo.silva/FIAP/flanelinha-parking/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/raphael.melo.silva/FIAP/flanelinha-parking/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/raphael.melo.silva/FIAP/flanelinha-parking/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/raphael.melo.silva/FIAP/flanelinha-parking/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/raphael.melo.silva/FIAP/flanelinha-parking/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/raphael.melo.silva/FIAP/flanelinha-parking/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/raphael.melo.silva/FIAP/flanelinha-parking/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/raphael.melo.silva/FIAP/flanelinha-parking/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/raphael.melo.silva/FIAP/flanelinha-parking/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
+            type="SPLIT_MAIN" />
     </build>
 
 </instant-run>

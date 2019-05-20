@@ -7,7 +7,7 @@ import android.support.v4.app.FragmentTransaction
 import android.support.v7.app.AppCompatActivity
 import br.com.flanelinhaparking.app.R
 import br.com.flanelinhaparking.app.about.AboutFragment
-import br.com.flanelinhaparking.app.cars.ui.fragments.CarListFragment
+import br.com.flanelinhaparking.app.parkings.ui.fragments.ParkingListFragment
 import br.com.flanelinhaparking.app.contact.ui.ContactFragment
 import br.com.flanelinhaparking.app.map.MapsFragment
 import kotlinx.android.synthetic.main.activity_main.*
@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
     val fragments = listOf(
             MapsFragment(),
             AboutFragment(),
-            CarListFragment(),
+            ParkingListFragment(),
             ContactFragment()
     )
 

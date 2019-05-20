@@ -4,11 +4,11 @@ import android.arch.persistence.room.Database
 import android.arch.persistence.room.Room
 import android.arch.persistence.room.RoomDatabase
 import android.content.Context
-import br.com.flanelinhaparking.app.cars.model.Car
+import br.com.flanelinhaparking.app.parkings.model.Parking
 import br.com.flanelinhaparking.app.common.constants.DB_NAME
-import br.com.flanelinhaparking.app.data.local.dao.CarDAO
+import br.com.flanelinhaparking.app.data.local.dao.ParkingDAO
 
-@Database(entities = [Car::class], version = 1)
+@Database(entities = [Parking::class], version = 1)
 abstract class MyDatabase : RoomDatabase() {
 
     companion object {
@@ -30,6 +30,6 @@ abstract class MyDatabase : RoomDatabase() {
         }
     }
 
-    abstract fun carDao(): CarDAO
+    abstract fun parkingDao(): ParkingDAO
 
 }
