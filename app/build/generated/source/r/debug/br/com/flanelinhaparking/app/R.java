@@ -3332,7 +3332,7 @@ public final class R {
      * <tr><td>barrier</td><td>2</td><td></td></tr>
      * <tr><td>chains</td><td>4</td><td></td></tr>
      * <tr><td>dimensions</td><td>8</td><td></td></tr>
-     * <tr><td>direct</td><td>1</td><td></td></tr>
+     * <tr><td>direct</td><td>1</td><td>direct, barriers, chains</td></tr>
      * <tr><td>graph</td><td>40</td><td></td></tr>
      * <tr><td>graph_wrap</td><td>80</td><td></td></tr>
      * <tr><td>groups</td><td>20</td><td></td></tr>
@@ -6377,19 +6377,18 @@ public final class R {
     public static final int tvPlate=0x7f080131;
     public static final int tv_developer_name1=0x7f080132;
     public static final int tv_developer_name2=0x7f080133;
-    public static final int tv_developer_name3=0x7f080134;
-    public static final int tv_version=0x7f080135;
-    public static final int uniform=0x7f080136;
-    public static final int unlabeled=0x7f080137;
-    public static final int up=0x7f080138;
-    public static final int useLogo=0x7f080139;
-    public static final int view_billet_list_empty=0x7f08013a;
-    public static final int view_offset_helper=0x7f08013b;
-    public static final int visible=0x7f08013c;
-    public static final int wide=0x7f08013d;
-    public static final int withText=0x7f08013e;
-    public static final int wrap=0x7f08013f;
-    public static final int wrap_content=0x7f080140;
+    public static final int tv_version=0x7f080134;
+    public static final int uniform=0x7f080135;
+    public static final int unlabeled=0x7f080136;
+    public static final int up=0x7f080137;
+    public static final int useLogo=0x7f080138;
+    public static final int view_billet_list_empty=0x7f080139;
+    public static final int view_offset_helper=0x7f08013a;
+    public static final int visible=0x7f08013b;
+    public static final int wide=0x7f08013c;
+    public static final int withText=0x7f08013d;
+    public static final int wrap=0x7f08013e;
+    public static final int wrap_content=0x7f08013f;
   }
   public static final class integer {
     public static final int abc_config_activityDefaultDur=0x7f090000;
@@ -6569,57 +6568,56 @@ public final class R {
     public static final int default_web_client_id=0x7f0e003e;
     public static final int dev_name1=0x7f0e003f;
     public static final int dev_name2=0x7f0e0040;
-    public static final int dev_name3=0x7f0e0041;
-    public static final int developed_for_label=0x7f0e0042;
-    public static final int fab_transformation_scrim_behavior=0x7f0e0043;
-    public static final int fab_transformation_sheet_behavior=0x7f0e0044;
-    public static final int fcm_fallback_notification_channel_label=0x7f0e0045;
-    public static final int firebase_database_url=0x7f0e0046;
-    public static final int gcm_defaultSenderId=0x7f0e0047;
-    public static final int google_api_key=0x7f0e0048;
-    public static final int google_app_id=0x7f0e0049;
-    public static final int google_crash_reporting_api_key=0x7f0e004a;
-    public static final int google_maps_key=0x7f0e004b;
-    public static final int google_storage_bucket=0x7f0e004c;
-    public static final int hello_blank_fragment=0x7f0e004d;
-    public static final int hide_bottom_view_on_scroll_behavior=0x7f0e004e;
-    public static final int label_MakeCall=0x7f0e004f;
-    public static final int label_button_login=0x7f0e0050;
-    public static final int label_button_register=0x7f0e0051;
-    public static final int label_logo=0x7f0e0052;
-    public static final int label_logout=0x7f0e0053;
-    public static final int message_no_phone=0x7f0e0054;
-    public static final int mtrl_chip_close_icon_content_description=0x7f0e0055;
-    public static final int password_toggle_content_description=0x7f0e0056;
-    public static final int path_password_eye=0x7f0e0057;
-    public static final int path_password_eye_mask_strike_through=0x7f0e0058;
-    public static final int path_password_eye_mask_visible=0x7f0e0059;
-    public static final int path_password_strike_through=0x7f0e005a;
-    public static final int place_autocomplete_clear_button=0x7f0e005b;
-    public static final int place_autocomplete_search_hint=0x7f0e005c;
-    public static final int project_id=0x7f0e005d;
-    public static final int search_menu_title=0x7f0e005e;
-    public static final int status_bar_notification_info_overflow=0x7f0e005f;
-    public static final int text_field_corporation=0x7f0e0060;
-    public static final int text_field_listed_cars=0x7f0e0061;
-    public static final int text_field_make_registration=0x7f0e0062;
-    public static final int text_field_model_hint=0x7f0e0063;
-    public static final int text_field_name_hint=0x7f0e0064;
-    public static final int text_field_no_cars=0x7f0e0065;
-    public static final int text_field_password_hint=0x7f0e0066;
-    public static final int text_field_phone_number_hint=0x7f0e0067;
-    public static final int text_field_plate_hint=0x7f0e0068;
-    public static final int text_field_share_location=0x7f0e0069;
-    public static final int text_field_user_hint=0x7f0e006a;
-    public static final int text_field_version=0x7f0e006b;
-    public static final int title_about=0x7f0e006c;
-    public static final int title_activity_main=0x7f0e006d;
-    public static final int title_activity_maps=0x7f0e006e;
-    public static final int title_contact=0x7f0e006f;
-    public static final int title_list=0x7f0e0070;
-    public static final int title_map=0x7f0e0071;
-    public static final int title_register=0x7f0e0072;
-    public static final int title_update=0x7f0e0073;
+    public static final int developed_for_label=0x7f0e0041;
+    public static final int fab_transformation_scrim_behavior=0x7f0e0042;
+    public static final int fab_transformation_sheet_behavior=0x7f0e0043;
+    public static final int fcm_fallback_notification_channel_label=0x7f0e0044;
+    public static final int firebase_database_url=0x7f0e0045;
+    public static final int gcm_defaultSenderId=0x7f0e0046;
+    public static final int google_api_key=0x7f0e0047;
+    public static final int google_app_id=0x7f0e0048;
+    public static final int google_crash_reporting_api_key=0x7f0e0049;
+    public static final int google_maps_key=0x7f0e004a;
+    public static final int google_storage_bucket=0x7f0e004b;
+    public static final int hello_blank_fragment=0x7f0e004c;
+    public static final int hide_bottom_view_on_scroll_behavior=0x7f0e004d;
+    public static final int label_MakeCall=0x7f0e004e;
+    public static final int label_button_login=0x7f0e004f;
+    public static final int label_button_register=0x7f0e0050;
+    public static final int label_logo=0x7f0e0051;
+    public static final int label_logout=0x7f0e0052;
+    public static final int message_no_phone=0x7f0e0053;
+    public static final int mtrl_chip_close_icon_content_description=0x7f0e0054;
+    public static final int password_toggle_content_description=0x7f0e0055;
+    public static final int path_password_eye=0x7f0e0056;
+    public static final int path_password_eye_mask_strike_through=0x7f0e0057;
+    public static final int path_password_eye_mask_visible=0x7f0e0058;
+    public static final int path_password_strike_through=0x7f0e0059;
+    public static final int place_autocomplete_clear_button=0x7f0e005a;
+    public static final int place_autocomplete_search_hint=0x7f0e005b;
+    public static final int project_id=0x7f0e005c;
+    public static final int search_menu_title=0x7f0e005d;
+    public static final int status_bar_notification_info_overflow=0x7f0e005e;
+    public static final int text_field_corporation=0x7f0e005f;
+    public static final int text_field_listed_cars=0x7f0e0060;
+    public static final int text_field_make_registration=0x7f0e0061;
+    public static final int text_field_model_hint=0x7f0e0062;
+    public static final int text_field_name_hint=0x7f0e0063;
+    public static final int text_field_no_cars=0x7f0e0064;
+    public static final int text_field_password_hint=0x7f0e0065;
+    public static final int text_field_phone_number_hint=0x7f0e0066;
+    public static final int text_field_plate_hint=0x7f0e0067;
+    public static final int text_field_share_location=0x7f0e0068;
+    public static final int text_field_user_hint=0x7f0e0069;
+    public static final int text_field_version=0x7f0e006a;
+    public static final int title_about=0x7f0e006b;
+    public static final int title_activity_main=0x7f0e006c;
+    public static final int title_activity_maps=0x7f0e006d;
+    public static final int title_contact=0x7f0e006e;
+    public static final int title_list=0x7f0e006f;
+    public static final int title_map=0x7f0e0070;
+    public static final int title_register=0x7f0e0071;
+    public static final int title_update=0x7f0e0072;
   }
   public static final class style {
     public static final int AlertDialog_AppCompat=0x7f0f0000;
@@ -15328,7 +15326,7 @@ public final class R {
      * <tr><td>barrier</td><td>2</td><td></td></tr>
      * <tr><td>chains</td><td>4</td><td></td></tr>
      * <tr><td>dimensions</td><td>8</td><td></td></tr>
-     * <tr><td>direct</td><td>1</td><td></td></tr>
+     * <tr><td>direct</td><td>1</td><td>direct, barriers, chains</td></tr>
      * <tr><td>graph</td><td>40</td><td></td></tr>
      * <tr><td>graph_wrap</td><td>80</td><td></td></tr>
      * <tr><td>groups</td><td>20</td><td></td></tr>

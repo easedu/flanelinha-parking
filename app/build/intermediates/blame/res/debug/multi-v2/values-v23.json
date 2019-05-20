@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/raphael.melo.silva/FIAP/flanelinha-parking/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
+            "outputFile": "C:\\Users\\Adriano\\Desktop\\flanelinha-parking\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
             "map": [
                 {
-                    "source": "/Users/raphael.melo.silva/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/e9c9be412208922283ad15d9e312a59a/res/values-v23/values-v23.xml",
+                    "source": "C:\\Users\\Adriano\\.gradle\\caches\\transforms-1\\files-1.1\\cardview-v7-28.0.0.aar\\d0f9922a8cce36715349c12c8e8a747a\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/Users/raphael.melo.silva/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/be877b782de539cdedff4be3b696adb7/res/values-v23/values-v23.xml",
+                    "source": "C:\\Users\\Adriano\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\f7abaac2613e1c8ff0270b211be6860c\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,19,32,33,34,35,36",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
