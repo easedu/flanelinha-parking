@@ -70,7 +70,7 @@
     <string msgid="146198913615257606" name="search_menu_title">"Pesquisar"</string>
     <string msgid="7988687684186075107" name="status_bar_notification_info_overflow">"999+"</string>
     <string name="text_field_corporation">Flanelinha Co.</string>
-    <string name="text_field_listed_cars">Os veículos cadastrados para você serão listados aqui automaticamente</string>
+    <string name="text_field_listed_cars">Os estacionamentos cadastrados para você serão listados aqui automaticamente</string>
     <string name="text_field_make_registration">Não tem uma conta? Cadastre-se</string>
     <string name="text_field_model_hint">Modelo de carro:</string>
     <string name="text_field_name_hint">Nome</string>
