@@ -3332,7 +3332,7 @@ public final class R {
      * <tr><td>barrier</td><td>2</td><td></td></tr>
      * <tr><td>chains</td><td>4</td><td></td></tr>
      * <tr><td>dimensions</td><td>8</td><td></td></tr>
-     * <tr><td>direct</td><td>1</td><td></td></tr>
+     * <tr><td>direct</td><td>1</td><td>direct, barriers, chains</td></tr>
      * <tr><td>graph</td><td>40</td><td></td></tr>
      * <tr><td>graph_wrap</td><td>80</td><td></td></tr>
      * <tr><td>groups</td><td>20</td><td></td></tr>
@@ -6587,45 +6587,46 @@ public final class R {
     public static final int label_attention=0x7f0e0051;
     public static final int label_button_login=0x7f0e0052;
     public static final int label_button_register=0x7f0e0053;
-    public static final int label_logo=0x7f0e0054;
-    public static final int label_logout=0x7f0e0055;
-    public static final int message_no_phone=0x7f0e0056;
-    public static final int message_success_delete=0x7f0e0057;
-    public static final int message_success_register=0x7f0e0058;
-    public static final int message_success_update=0x7f0e0059;
-    public static final int mtrl_chip_close_icon_content_description=0x7f0e005a;
-    public static final int password_toggle_content_description=0x7f0e005b;
-    public static final int path_password_eye=0x7f0e005c;
-    public static final int path_password_eye_mask_strike_through=0x7f0e005d;
-    public static final int path_password_eye_mask_visible=0x7f0e005e;
-    public static final int path_password_strike_through=0x7f0e005f;
-    public static final int place_autocomplete_clear_button=0x7f0e0060;
-    public static final int place_autocomplete_search_hint=0x7f0e0061;
-    public static final int project_id=0x7f0e0062;
-    public static final int register_label=0x7f0e0063;
-    public static final int search_menu_title=0x7f0e0064;
-    public static final int status_bar_notification_info_overflow=0x7f0e0065;
-    public static final int text_field_corporation=0x7f0e0066;
-    public static final int text_field_listed_cars=0x7f0e0067;
-    public static final int text_field_make_registration=0x7f0e0068;
-    public static final int text_field_model_hint=0x7f0e0069;
-    public static final int text_field_name_hint=0x7f0e006a;
-    public static final int text_field_no_cars=0x7f0e006b;
-    public static final int text_field_password_hint=0x7f0e006c;
-    public static final int text_field_phone_number_hint=0x7f0e006d;
-    public static final int text_field_plate_hint=0x7f0e006e;
-    public static final int text_field_share_location=0x7f0e006f;
-    public static final int text_field_user_hint=0x7f0e0070;
-    public static final int text_field_version=0x7f0e0071;
-    public static final int title_about=0x7f0e0072;
-    public static final int title_activity_main=0x7f0e0073;
-    public static final int title_activity_maps=0x7f0e0074;
-    public static final int title_contact=0x7f0e0075;
-    public static final int title_list=0x7f0e0076;
-    public static final int title_map=0x7f0e0077;
-    public static final int title_register=0x7f0e0078;
-    public static final int title_update=0x7f0e0079;
-    public static final int update_label=0x7f0e007a;
+    public static final int label_loading=0x7f0e0054;
+    public static final int label_logo=0x7f0e0055;
+    public static final int label_logout=0x7f0e0056;
+    public static final int message_no_phone=0x7f0e0057;
+    public static final int message_success_delete=0x7f0e0058;
+    public static final int message_success_register=0x7f0e0059;
+    public static final int message_success_update=0x7f0e005a;
+    public static final int mtrl_chip_close_icon_content_description=0x7f0e005b;
+    public static final int password_toggle_content_description=0x7f0e005c;
+    public static final int path_password_eye=0x7f0e005d;
+    public static final int path_password_eye_mask_strike_through=0x7f0e005e;
+    public static final int path_password_eye_mask_visible=0x7f0e005f;
+    public static final int path_password_strike_through=0x7f0e0060;
+    public static final int place_autocomplete_clear_button=0x7f0e0061;
+    public static final int place_autocomplete_search_hint=0x7f0e0062;
+    public static final int project_id=0x7f0e0063;
+    public static final int register_label=0x7f0e0064;
+    public static final int search_menu_title=0x7f0e0065;
+    public static final int status_bar_notification_info_overflow=0x7f0e0066;
+    public static final int text_field_corporation=0x7f0e0067;
+    public static final int text_field_listed_cars=0x7f0e0068;
+    public static final int text_field_make_registration=0x7f0e0069;
+    public static final int text_field_model_hint=0x7f0e006a;
+    public static final int text_field_name_hint=0x7f0e006b;
+    public static final int text_field_no_cars=0x7f0e006c;
+    public static final int text_field_password_hint=0x7f0e006d;
+    public static final int text_field_phone_number_hint=0x7f0e006e;
+    public static final int text_field_plate_hint=0x7f0e006f;
+    public static final int text_field_share_location=0x7f0e0070;
+    public static final int text_field_user_hint=0x7f0e0071;
+    public static final int text_field_version=0x7f0e0072;
+    public static final int title_about=0x7f0e0073;
+    public static final int title_activity_main=0x7f0e0074;
+    public static final int title_activity_maps=0x7f0e0075;
+    public static final int title_contact=0x7f0e0076;
+    public static final int title_list=0x7f0e0077;
+    public static final int title_map=0x7f0e0078;
+    public static final int title_register=0x7f0e0079;
+    public static final int title_update=0x7f0e007a;
+    public static final int update_label=0x7f0e007b;
   }
   public static final class style {
     public static final int AlertDialog_AppCompat=0x7f0f0000;
@@ -15334,7 +15335,7 @@ public final class R {
      * <tr><td>barrier</td><td>2</td><td></td></tr>
      * <tr><td>chains</td><td>4</td><td></td></tr>
      * <tr><td>dimensions</td><td>8</td><td></td></tr>
-     * <tr><td>direct</td><td>1</td><td></td></tr>
+     * <tr><td>direct</td><td>1</td><td>direct, barriers, chains</td></tr>
      * <tr><td>graph</td><td>40</td><td></td></tr>
      * <tr><td>graph_wrap</td><td>80</td><td></td></tr>
      * <tr><td>groups</td><td>20</td><td></td></tr>

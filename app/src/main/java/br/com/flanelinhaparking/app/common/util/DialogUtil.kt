@@ -16,7 +16,7 @@ class DialogUtil {
 
         fun getLoading(context: Context): ProgressDialog{
             dialog = ProgressDialog(context)
-            dialog.setMessage("Carregando...")
+            dialog.setMessage(context.resources.getString(R.string.label_loading))
             dialog.setIndeterminate(false)
             dialog.setCanceledOnTouchOutside(true)
             dialog.setCancelable(true)
@@ -73,7 +73,7 @@ class DialogUtil {
 
             alertDialog.setCancelable(true)
             alertDialog.setView(viewInflated)
-            alertDialog.setButton(DialogInterface.BUTTON_POSITIVE, "Cancelar", object : DialogInterface.OnClickListener {
+            alertDialog.setButton(DialogInterface.BUTTON_POSITIVE, context.resources.getString(R.string.cancel_label), object : DialogInterface.OnClickListener {
                 override fun onClick(dialog: DialogInterface, which: Int) {
                     alertDialog.dismiss()
                 }

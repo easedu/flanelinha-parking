@@ -21,7 +21,7 @@
     <string name="text_field_version">Version 1.0.0</string>
     <string name="text_field_make_registration">Not registered yet? SingUp here!</string>
     <string name="text_field_no_cars">No parkings registered</string>
-    <string name="text_field_listed_cars">Cars registered for you will be listed here</string>
+    <string name="text_field_listed_cars">Parkings registered for you will be listed here</string>
     <string name="text_field_share_location">Share Location</string>
 
 
@@ -51,5 +51,5 @@
     <string name="delete_dialog_title">Do you want to delete this parking?</string>
 
     <string name="developed_for_label">Developers:</string>
-
+    <string name="label_loading">Loading...</string>
 </resources>

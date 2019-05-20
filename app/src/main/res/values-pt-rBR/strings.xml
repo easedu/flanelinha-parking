@@ -21,7 +21,7 @@
     <string name="text_field_version">Versão 1.0.0</string>
     <string name="text_field_make_registration">Não tem uma conta? Cadastre-se</string>
     <string name="text_field_no_cars">Você ainda não possui veículos</string>
-    <string name="text_field_listed_cars">Os veículos cadastrados para você serão listados aqui automaticamente</string>
+    <string name="text_field_listed_cars">Os estacionamentos cadastrados para você serão listados aqui automaticamente</string>
     <string name="text_field_share_location">Compartilhar Endereço</string>
 
     <!-- OTHERS -->
@@ -49,5 +49,5 @@
     <string name="register_label">Cadastrar</string>
     <string name="deleter_label">Deletar</string>
     <string name="cancel_label">Cancelar</string>
-
+    <string name="label_loading">Carregando...</string>
 </resources>
