@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "467946756930",
+    "firebase_url": "https://flanelinha-parking.firebaseio.com",
+    "project_id": "flanelinha-parking",
+    "storage_bucket": "flanelinha-parking.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:467946756930:android:6c6cec5297675763",
+        "android_client_info": {
+          "package_name": "br.com.flanelinha.falanelinhaparking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "467946756930-iuarevjokg3cv5htf35btvid37erb5e5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.flanelinha.falanelinhaparking",
+            "certificate_hash": "dcedab34056a284b686d2260c1515e07848e777d"
+          }
+        },
+        {
+          "client_id": "467946756930-1mb3iu1ue62kda1h2lfcm03avrpo2hpl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHVXqf3ZpvSWD8HGi7aOn_Pv4vlzy3X24"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "467946756930-1mb3iu1ue62kda1h2lfcm03avrpo2hpl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
