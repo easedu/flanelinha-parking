@@ -27,6 +27,7 @@
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Compartilhar com"</string>
     <string msgid="3300176832234831527" name="abc_shareactionprovider_share_with_application">"Compartilhar com <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Recolher"</string>
+    <string name="app_name">FlanelinhaParking</string>
     <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"Ativar"</string>
     <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> só funciona com o Google Play Services ativado."</string>
     <string msgid="3147157405986503375" name="common_google_play_services_enable_title">"Ativar o Google Play Services"</string>
@@ -45,9 +46,40 @@
     <string msgid="5201977337835724196" name="common_open_on_phone">"Abrir no smartphone"</string>
     <string msgid="3441753203274453993" name="common_signin_button_text">"Fazer login"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"Fazer login com o Google"</string>
+    <string name="dev_name1">Raphael de Melo Silva</string>
+    <string name="dev_name2">Adriano Mendes Marinheiro</string>
+    <string name="dev_name3">Natalie Berland</string>
+    <string name="developed_for_label">Desenvolvido por:</string>
     <string msgid="4133737464567140336" name="fcm_fallback_notification_channel_label">"Diversos"</string>
+    <string name="hello_blank_fragment">Olá espaço em branco</string>
+    <string name="label_MakeCall">Faça uma ligação</string>
+    <string name="label_button_login">Entrar</string>
+    <string name="label_button_register">Registrar</string>
+    <string name="label_logo">Logo</string>
+    <string name="label_logout">Sair</string>
+    <string name="message_no_phone">É necessário preencher o telefone</string>
     <string msgid="1303870564366209730" name="place_autocomplete_clear_button">"Limpar pesquisa"</string>
     <string msgid="2809095107724486040" name="place_autocomplete_search_hint">"Pesquisar"</string>
     <string msgid="146198913615257606" name="search_menu_title">"Pesquisar"</string>
     <string msgid="7988687684186075107" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="text_field_corporation">Flanelinha Co.</string>
+    <string name="text_field_listed_cars">Os veículos cadastrados para você serão listados aqui automaticamente</string>
+    <string name="text_field_make_registration">Não tem uma conta? Cadastre-se</string>
+    <string name="text_field_model_hint">Modelo de carro:</string>
+    <string name="text_field_name_hint">Nome</string>
+    <string name="text_field_no_cars">Você ainda não possui veículos</string>
+    <string name="text_field_password_hint">Senha</string>
+    <string name="text_field_phone_number_hint">Digite seu número de telefone</string>
+    <string name="text_field_plate_hint">Placa:</string>
+    <string name="text_field_share_location">Compartilhar Endereço</string>
+    <string name="text_field_user_hint">E-mail</string>
+    <string name="text_field_version">Versão 1.0.0</string>
+    <string name="title_about">Sobre o Aplicativo</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_maps">Mapa</string>
+    <string name="title_contact">Contato</string>
+    <string name="title_list">Lista</string>
+    <string name="title_map">Mapa</string>
+    <string name="title_register">Cadastro</string>
+    <string name="title_update">Atualizar</string>
 </resources>

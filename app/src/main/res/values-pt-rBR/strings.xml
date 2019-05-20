@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">FlanelinhaParking</string>
+
+    <!-- LABELS -->
+
+    <string name="label_button_login">Entrar</string>
+    <string name="label_button_register">Registrar</string>
+    <string name="label_MakeCall">Faça uma ligação</string>
+    <string name="label_logout">Sair</string>
+    <string name="label_logo">Logo</string>
+
+    <!-- HINTS -->
+
+    <string name="text_field_password_hint">Senha</string>
+    <string name="text_field_user_hint">E-mail</string>
+    <string name="text_field_name_hint">Nome</string>
+    <string name="text_field_model_hint">Modelo de carro:</string>
+    <string name="text_field_plate_hint">Placa:</string>
+    <string name="text_field_phone_number_hint">Digite seu número de telefone</string>
+    <string name="text_field_corporation">Flanelinha Co.</string>
+    <string name="text_field_version">Versão 1.0.0</string>
+    <string name="text_field_make_registration">Não tem uma conta? Cadastre-se</string>
+    <string name="text_field_no_cars">Você ainda não possui veículos</string>
+    <string name="text_field_listed_cars">Os veículos cadastrados para você serão listados aqui automaticamente</string>
+    <string name="text_field_share_location">Compartilhar Endereço</string>
+
+    <!-- OTHERS -->
+
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_about">Sobre o Aplicativo</string>
+    <string name="title_register">Cadastro</string>
+    <string name="title_update">Atualizar</string>
+    <string name="title_list">Lista</string>
+    <string name="title_map">Mapa</string>
+    <string name="title_contact">Contato</string>
+    <string name="title_activity_maps">Mapa</string>
+    <string name="message_no_phone">É necessário preencher o telefone</string>
+    <string name="dev_name1">Eduardo Arruda Souza</string>
+    <string name="dev_name2">Raúl Vizintim Brito</string>
+    <string name="developed_for_label">Desenvolvido por:</string>
+
+    <string name="hello_blank_fragment">Olá espaço em branco</string>
+
+</resources>
